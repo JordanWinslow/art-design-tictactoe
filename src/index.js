@@ -16,11 +16,14 @@ const displayWarning = () => {
   document.querySelector(".WARNING").classList.add("fadeInOut");
   setTimeout(() => {
     document.querySelector(".WARNING").classList.remove("fadeInOut");
-  }, 1500);
+  }, 3000);
 };
 const userAction = e => {
+  console.log("USER ACTION");
+  console.log("TURN TRACKER: ", turnTracker);
   // Check to make sure they didn't click a square that is taken already.
   if (e.target.hasChildNodes()) {
+    console.log("USER CLICKED TAKEN SPACE");
     displayWarning();
     return;
   } else {
@@ -28,6 +31,7 @@ const userAction = e => {
     e.target.innerHTML = `<div class="X fadeIn">${X}</div>`;
     if (turnTracker === 5) {
       setTimeout(() => gameOver(), 2000); // wait for the X to appear before ending game
+      return;
     } else {
       turnTracker++;
       computerAction(); // use hoisting to run the computerAction below
@@ -35,6 +39,7 @@ const userAction = e => {
   }
 };
 const computerAction = () => {
+  console.log("COMPUTER ACTION");
   // pretend the computer is thinking
   setTimeout(() => {
     // Check every square until we find one that is empty.
@@ -55,6 +60,8 @@ const computerAction = () => {
 const checkWinCondition = () => {};
 
 const gameOver = () => {
+  console.log("GAME OVER");
+  console.log("RESETTING GAME BOARD");
   for (const key in gameSquares) {
     if (gameSquares.hasOwnProperty(key)) {
       const square = gameSquares[key];

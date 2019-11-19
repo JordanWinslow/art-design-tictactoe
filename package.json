@@ -1,7 +1,7 @@
 {
   "name": "art-design-and-tic-tac-toe",
   "version": "1.0.0",
-  "description": "by Jordan Winslow https://jordanwinslow.dev",
+  "description": "This is an art-directed tic tac toe game I designed for a code interview.",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -11,5 +11,11 @@
     "@babel/core": "7.2.0",
     "parcel-bundler": "^1.6.1"
   },
-  "keywords": []
+  "keywords": [
+    "css3",
+    "art design",
+    "makeup",
+    "fashion",
+    "luxury"
+  ]
 }

@@ -81,8 +81,8 @@ body {
   position: absolute;
   left: 28%;
   top: 45%;
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
 }
 .fadeInOut {
   animation-name: fadeInOut;
@@ -140,7 +140,10 @@ body {
   0% {
     opacity: 0;
   }
-  50% {
+  25% {
+    opacity: 1;
+  }
+  75% {
     opacity: 1;
   }
   100% {
