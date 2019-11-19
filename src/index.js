@@ -20,7 +20,7 @@ const userAction = e => {
     gameBoard.style.pointerEvents = "none"; // Disable all click events until operation finishes
     e.target.innerHTML = `<div class="X fadeIn">${X}</div>`;
     if (turnTracker === 5) {
-      setTimeout(gameOver(), 2000); // wait for the X to appear before ending game
+      setTimeout(() => gameOver(), 2000); // wait for the X to appear before ending game
     } else {
       turnTracker++;
       computerAction(); // use hoisting to run the computerAction below
@@ -44,7 +44,9 @@ const computerAction = () => {
     gameBoard.style.pointerEvents = "auto"; // Allow the user to click again
   }, 1000);
 };
+
 const checkWinCondition = () => {};
+
 const gameOver = () => {
   for (const key in gameSquares) {
     if (gameSquares.hasOwnProperty(key)) {
