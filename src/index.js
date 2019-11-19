@@ -1,5 +1,5 @@
 import O from "./O.svg";
-import X from "./X.svg";
+const X = require("./X.svg");
 
 const gameSquares = document.getElementsByClassName("gameSquare");
 const gameBoard = document.getElementById("ticTacToeBox");
@@ -57,6 +57,8 @@ const gameOver = () => {
   turnTracker = 1;
   gameBoard.style.pointerEvents = "auto"; // Allow the user to click again
 };
+
+/***********************GAME BEGINS HERE**********************/
 
 // ATTACH CLICK EVENTS TO THE GAME SQUARES SO USER CAN INTERACT WITH BOARD
 for (const id in gameSquares) {
