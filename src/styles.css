@@ -4,7 +4,7 @@ body {
   overflow: hidden;
 }
 #gameContainer {
-  width: 100vw;
+  width: 850px;
   height: 100vh;
 }
 #black-bg-large-screen {
@@ -19,7 +19,7 @@ body {
   position: absolute;
   top: 0;
   z-index: -1;
-  width: 100%;
+  width: 850px;
 }
 #vertical-center {
   display: flex;
@@ -32,10 +32,8 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 50%;
-  max-width: 500px;
-  height: 50vw;
-  max-height: 500px;
+  height: 500px;
+  width: 500px;
   margin-right: 30%;
   margin-top: 10%;
 }
@@ -89,16 +87,16 @@ body {
 .fadeInOut {
   animation-name: fadeInOut;
 }
-@media (min-width: 850px) {
+@media (max-width: 850px) {
   #BG {
-    width: 850px;
+    width: 100%;
   }
   #gameContainer {
-    width: 850px;
+    width: 100vw;
   }
   #ticTacToeBox {
-    height: 500px;
-    width: 500px;
+    height: 50vw;
+    width: 50%;
   }
 }
 @media (max-width: 700px) {
