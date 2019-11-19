@@ -6,7 +6,7 @@ Link to license: https://creativecommons.org/licenses/by-nc-sa/4.0/
 */
 
 import O from "./O.svg";
-const X = require("./X.svg");
+import X from "./X.svg";
 
 const gameSquares = document.getElementsByClassName("gameSquare");
 const gameBoard = document.getElementById("ticTacToeBox");

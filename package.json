@@ -1,7 +1,7 @@
 {
   "name": "art-design-and-tic-tac-toe",
   "version": "1.0.0",
-  "description": "This is an art-directed tic tac toe game I designed for a code interview.",
+  "description": "This is an art-directed tic tac toe game I designed for a code interview.\n\nhttps://JordanWinslow.dev",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
