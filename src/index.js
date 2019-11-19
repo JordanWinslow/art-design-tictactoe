@@ -1,3 +1,10 @@
+/*
+AUTHOR: Jordan Winslow
+WEBSITE: https://JordanWinslow.dev
+LICENSE: Attribution-NonCommercial-ShareAlike 4.0 International
+Link to license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+*/
+
 import O from "./O.svg";
 const X = require("./X.svg");
 
