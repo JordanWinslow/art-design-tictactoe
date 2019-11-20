@@ -62,7 +62,6 @@ body {
   animation-name: fadeIn;
 }
 #aboutText {
-  font-family: Montserrat;
   font-size: 1rem;
   position: absolute;
   bottom: 0;
